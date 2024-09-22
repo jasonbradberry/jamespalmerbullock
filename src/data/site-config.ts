@@ -90,8 +90,8 @@ const siteConfig: SiteConfig = {
   If you would like to participate, please submit your story below.
   `,
         image: {
-            src: '/hero.jpeg',
-            alt: 'A person sitting at a desk in front of a computer'
+            src: '/james.svg',
+            alt: 'James'
         },
         actions: [
             {

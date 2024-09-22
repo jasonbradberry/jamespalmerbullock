@@ -4,16 +4,16 @@
 
 @layer base {
     :root {
-        --color-text-main: 23 23 23; /* #171717 */
-        --color-bg-main: 242 241 236; /* #F2F1EC */
-        --color-bg-muted: 234 233 225; /* #EAE9E1 */
-        --color-border-main: 23 23 23; /* #171717 */
+        --color-text-main: 16 13 17; /* BLACK */
+        --color-bg-main: 242 255 242; /* PALE GREEN */
+        --color-bg-muted: 247 242 237; /* PALE ORANGE */
+        --color-border-main: 0 255 0; /* LIME GREEN */
     }
     html.dark {
-        --color-text-main: 242 241 236; /* #F2F1EC */
-        --color-bg-main: 23 23 23; /* #171717 */
-        --color-bg-muted: 36 36 36; /* #242424 */
-        --color-border-main: 242 241 236; /* #F2F1EC */
+        --color-text-main: 242 255 242; /* PALE GREEN */
+        --color-bg-main: 16 13 17; /* BLACK */
+        --color-bg-muted: 60 49 53; /* MUTED BLACK */
+        --color-border-main: 0 255 0; /* LIME GREEN */
     }
 
     /* Cyan */
@@ -56,4 +56,38 @@
     url('/fonts/NimbusSansLReg.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+
+.skip-link {
+  position: absolute;
+  left: 3em;
+  top: 3em;
+  z-index: 1;
+}
+
+.skip-link:not(:focus) {
+  display: inline-block;
+  height: 1px;
+  width: 1px;
+  min-width: auto;
+  max-width: fit-content;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* 
+VISUALLY HIDDEN UTILITY
+Info: https://piccalil.li/quick-tip/visually-hidden/ 
+*/
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 0;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
 }
