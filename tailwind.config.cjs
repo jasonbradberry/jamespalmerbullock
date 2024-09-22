@@ -5,8 +5,8 @@ module.exports = {
     darkMode: 'class',
     theme: {
         fontFamily: {
-            sans: ['Inter', ...defaultTheme.fontFamily.sans],
-            serif: ['Newsreader', ...defaultTheme.fontFamily.serif]
+            sans: ['Space Mono', ...defaultTheme.fontFamily.sans],
+            serif: ['Nimbus Sans L', ...defaultTheme.fontFamily.serif]
         },
         extend: {
             textColor: {
@@ -53,14 +53,14 @@ module.exports = {
                             }
                         },
                         'h1,h2,h3,h4,h5,h6': {
-                            fontFamily: theme('fontFamily.serif'),
-                            fontWeight: 500
+                            fontFamily: theme('fontFamily.sans'),
+                            fontWeight: 400
                         },
                         blockquote: {
                             border: 0,
-                            fontFamily: theme('fontFamily.serif'),
+                            fontFamily: theme('fontFamily.sans'),
                             fontSize: '1.3125em',
-                            fontStyle: 'italic',
+                            fontStyle: 'normal',
                             fontWeight: 'normal',
                             lineHeight: 1.4,
                             paddingLeft: 0,

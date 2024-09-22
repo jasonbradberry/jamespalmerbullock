@@ -9,7 +9,7 @@ import { sortItemsByDateDesc } from '../../utils/data-utils';
 import { slugify } from '../../utils/common-utils';
 
 export async function getStaticPaths() {
-    const posts = (await getCollection('blog')).sort(sortItemsByDateDesc);
+    const posts = (await getCollection('stories')).sort(sortItemsByDateDesc);
     const postCount = posts.length;
     return posts.map((post, index) => ({
         params: { slug: post.slug },
@@ -21,7 +21,7 @@ export async function getStaticPaths() {
     }));
 }
 
-type Props = { post: CollectionEntry<'blog'>; prevPost: CollectionEntry<'blog'>; nextPost: CollectionEntry<'blog'> };
+type Props = { post: CollectionEntry<'stories'>; prevPost: CollectionEntry<'stories'>; nextPost: CollectionEntry<'stories'> };
 
 const { href } = Astro.url;
 const { post, prevPost, nextPost } = Astro.props;
@@ -62,13 +62,15 @@ const { Content } = await post.render();
                     </div>
                 )
             }
-            <Button class="copy-url-button" aria-label="Copy link" data-url={href} data-tooltip-default="Copy link" data-tooltip-success="Copied">Share</Button>
+            <Button class="copy-url-button" aria-label="Copy link" data-url={href} data-tooltip-default="Copy link" data-tooltip-success="Link copied"
+                >Copy link to share</Button
+            >
         </div>
     </article>
     {
         (prevPost || nextPost) && (
             <div class="my-16 sm:my-24">
-                <h2 class="mb-12 text-xl font-serif italic sm:mb-16 sm:text-2xl">Read Next</h2>
+                <h2 class="mb-12 text-xl font-serif sm:mb-16 sm:text-2xl">Read Next</h2>
                 {nextPost && <PostPreview post={nextPost} class="mb-10 sm:mb-12" headingLevel="h3" />}
                 {prevPost && <PostPreview post={prevPost} class="mb-10 sm:mb-12" headingLevel="h3" />}
             </div>
@@ -90,7 +92,7 @@ const { Content } = await post.render();
 
             await navigator.clipboard.writeText(url);
 
-            button.innerText = 'Copied';
+            button.innerText = 'Link copied';
 
             setTimeout(() => {
                 button.innerText = label;

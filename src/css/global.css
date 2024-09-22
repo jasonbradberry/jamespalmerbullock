@@ -48,3 +48,12 @@
     }
     */
 }
+
+@font-face {
+  font-family: 'Nimbus Sans L';
+  src:
+    url('/fonts/NimbusSansLReg.woff2') format('woff2'),
+    url('/fonts/NimbusSansLReg.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
