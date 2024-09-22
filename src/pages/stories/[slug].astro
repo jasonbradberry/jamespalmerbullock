@@ -4,7 +4,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Button from '../../components/Button.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import PostPreview from '../../components/PostPreview.astro';
-import Subscribe from '../../components/Subscribe.astro';
 import { sortItemsByDateDesc } from '../../utils/data-utils';
 import { slugify } from '../../utils/common-utils';
 
@@ -25,23 +24,21 @@ type Props = { post: CollectionEntry<'stories'>; prevPost: CollectionEntry<'stor
 
 const { href } = Astro.url;
 const { post, prevPost, nextPost } = Astro.props;
-const { title, publishDate, updatedDate, excerpt, tags = [], seo } = post.data;
+const { title, name, publishDate, excerpt, tags = [], seo } = post.data;
 const { Content } = await post.render();
 ---
 
 <BaseLayout title={seo?.title ?? title} description={seo?.description ?? excerpt} image={seo?.image} pageType="article" showHeader={true}>
     <article class="mb-16 sm:mb-24">
-        <header class="mb-8">
-            <h1 class="text-3xl leading-tight font-serif font-medium sm:text-5xl sm:leading-tight">{title}</h1>
-            <div class="mt-4 text-sm">
+        <header class="mb-16">
+            <h1 class="text-4xl leading-tight font-serif font-medium sm:text-5xl sm:leading-tight border-b border-main pb-4">{title}</h1>
+            <div class="flex flex-col gap-4 sm:justify-between sm:flex-row mt-4 text-sm">
                 <FormattedDate date={publishDate} />
                 {
-                    updatedDate && (
+                    name && (
                         <>
                             {' '}
-                            <span>
-                                (Updated on <FormattedDate date={updatedDate} />)
-                            </span>
+                            <span>Shared by {name}</span>
                         </>
                     )
                 }
@@ -70,13 +67,13 @@ const { Content } = await post.render();
     {
         (prevPost || nextPost) && (
             <div class="my-16 sm:my-24">
-                <h2 class="mb-12 text-xl font-serif sm:mb-16 sm:text-2xl">Read Next</h2>
+                <h2 class="mb-6 text-sm font-sans tracking-normal">Previous post:</h2>
                 {nextPost && <PostPreview post={nextPost} class="mb-10 sm:mb-12" headingLevel="h3" />}
+                <h2 class="mb-6 text-sm font-sans tracking-normal">Next post:</h2>
                 {prevPost && <PostPreview post={prevPost} class="mb-10 sm:mb-12" headingLevel="h3" />}
             </div>
         )
     }
-    <Subscribe class="my-16 sm:my-24" />
 </BaseLayout>
 
 <script>

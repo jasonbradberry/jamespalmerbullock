@@ -59,7 +59,7 @@ const siteConfig: SiteConfig = {
         },
         {
             text: 'Submit your story',
-            href: '/submit'
+            href: 'https://jpb.squarespace.com/submit'
         },
     ],
     footerNavLinks: [
@@ -88,7 +88,11 @@ const siteConfig: SiteConfig = {
         actions: [
             {
                 text: 'Submit your story',
-                href: '/submit'
+                href: 'https://jpb.squarespace.com/submit'
+            },
+            {
+                text: 'Read stories',
+                href: '/stories'
             }
         ]
     },

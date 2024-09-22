@@ -19,6 +19,8 @@ const stories = defineCollection({
         publishDate: z.coerce.date(),
         updatedDate: z.coerce.date().optional(),
         isFeatured: z.boolean().default(false),
+        name: z.string().optional(),
+        relationship: z.string().optional(),
         tags: z.array(z.string()).default([]),
         seo: seoSchema.optional()
     })

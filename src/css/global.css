@@ -5,14 +5,16 @@
 @layer base {
     :root {
         --color-text-main: 16 13 17; /* BLACK */
+        --color-text-light: 242 255 242; /* PALE GREEN */
         --color-bg-main: 242 255 242; /* PALE GREEN */
-        --color-bg-muted: 247 242 237; /* PALE ORANGE */
-        --color-border-main: 0 255 0; /* LIME GREEN */
+        --color-bg-muted: 60 49 53; /* MUTED BLACK */
+        --color-border-main: 60 49 53; /* MUTED BLACK */
     }
     html.dark {
         --color-text-main: 242 255 242; /* PALE GREEN */
+        --color-text-light: 16 13 17; /* BLACK */
         --color-bg-main: 16 13 17; /* BLACK */
-        --color-bg-muted: 60 49 53; /* MUTED BLACK */
+        --color-bg-muted: 0 255 0; /* LIME GREEN */
         --color-border-main: 0 255 0; /* LIME GREEN */
     }
 
@@ -74,6 +76,13 @@
   overflow: hidden;
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* 
+TAILWIND OVERRIDES
+*/
+.leading-tight {
+  line-height: 1.125 !important;
 }
 
 /* 
