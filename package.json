@@ -1,13 +1,16 @@
 {
-    "name": "dante-astro-theme",
+    "name": "jamespalmerbullock",
     "type": "module",
     "version": "0.0.1",
+    "homepage": "https://jasonbradberry.github.io/jamespalmerbullock",
     "scripts": {
         "dev": "astro dev",
         "start": "astro dev",
         "build": "astro build",
         "preview": "astro preview",
-        "astro": "astro"
+        "astro": "astro",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "dependencies": {
         "@astrojs/mdx": "^3.1.5",
@@ -20,6 +23,7 @@
     },
     "devDependencies": {
         "@tailwindcss/typography": "^0.5.15",
+        "gh-pages": "^6.1.1",
         "prettier": "^3.3.3",
         "prettier-plugin-tailwindcss": "^0.6.6"
     }
