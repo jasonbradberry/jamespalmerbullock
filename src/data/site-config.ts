@@ -41,7 +41,7 @@ const siteConfig: SiteConfig = {
     subtitle: 'Call for stories and memories',
     description: 'Astro.js and Tailwind CSS theme for stories and portfolio by justgoodui.com',
     image: {
-        src: '/jamespalmerbullockmeta-image.jpg',
+        src: '/meta-image.jpg',
         alt: 'James Palmer-Bullock'
     },
     headerNavLinks: [
@@ -51,11 +51,11 @@ const siteConfig: SiteConfig = {
         },
         {
             text: 'Stories',
-            href: '/jamespalmerbullockstories'
+            href: '/stories'
         },
         {
             text: 'Tags',
-            href: '/jamespalmerbullocktags'
+            href: '/tags'
         },
         {
             text: 'Submit your story',
@@ -65,7 +65,7 @@ const siteConfig: SiteConfig = {
     footerNavLinks: [
         {
             text: 'About',
-            href: '/jamespalmerbullockabout'
+            href: '/about'
         },
     ],
     socialLinks: [
@@ -82,7 +82,7 @@ const siteConfig: SiteConfig = {
   If you would like to participate, please submit your story below.
   `,
         image: {
-            src: '/jamespalmerbullockjames.svg',
+            src: '/james.svg',
             alt: 'James'
         },
         actions: [
@@ -92,7 +92,7 @@ const siteConfig: SiteConfig = {
             },
             {
                 text: 'Read stories',
-                href: '/jamespalmerbullockstories'
+                href: '/stories'
             }
         ]
     },
