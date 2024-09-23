@@ -12,7 +12,7 @@ export async function GET(context) {
         items: posts.map((item) => ({
             title: item.data.title,
             description: item.data.excerpt,
-            link: `/jamespalmerbullock/stories/${item.slug}/`,
+            link: `/jamespalmerbullockstories/${item.slug}/`,
             pubDate: item.data.publishDate.setUTCHours(0)
         }))
     });
