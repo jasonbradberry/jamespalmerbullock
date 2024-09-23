@@ -41,7 +41,7 @@ const siteConfig: SiteConfig = {
     subtitle: 'Call for stories and memories',
     description: 'Astro.js and Tailwind CSS theme for stories and portfolio by justgoodui.com',
     image: {
-        src: '/meta-image.jpg',
+        src: '/jamespalmerbullock/meta-image.jpg',
         alt: 'James Palmer-Bullock'
     },
     headerNavLinks: [
@@ -82,7 +82,7 @@ const siteConfig: SiteConfig = {
   If you would like to participate, please submit your story below.
   `,
         image: {
-            src: '/james.svg',
+            src: '/jamespalmerbullock/james.svg',
             alt: 'James'
         },
         actions: [
