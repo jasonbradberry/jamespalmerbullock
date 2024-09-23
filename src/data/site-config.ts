@@ -47,11 +47,11 @@ const siteConfig: SiteConfig = {
     headerNavLinks: [
         {
             text: 'Home',
-            href: '/'
+            href: '/jamespalmerbullock/'
         },
         {
             text: 'Stories',
-            href: '/stories'
+            href: '/jamespalmerbullock/stories'
         },
         // {
         //     text: 'Tags',
@@ -82,7 +82,7 @@ const siteConfig: SiteConfig = {
   If you would like to participate, please submit your story below.
   `,
         image: {
-            src: '/james.svg',
+            src: '/jamespalmerbullock/james.svg',
             alt: 'James'
         },
         actions: [
@@ -92,7 +92,7 @@ const siteConfig: SiteConfig = {
             },
             {
                 text: 'Read stories',
-                href: '/stories'
+                href: '/jamespalmerbullock/stories'
             }
         ]
     },
