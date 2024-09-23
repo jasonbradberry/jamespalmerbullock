@@ -11,17 +11,10 @@ const TitleTag = headingLevel;
 ---
 
 <a href={`/stories/${post.slug}/`} class="group">
-    {
-        images && images.length > 0 && (
-            <div class="mt-16">
-                <img src={`/${images[0]}`} alt="" class="mb-8 sm:mb-12 group-hover:opacity-100" />
-            </div>
-        )
-    }
     <div class:list={['flex justify-between items-start gap-8', className]}>
         <div class="grow">
             <TitleTag
-                class="mb-2 leading-tight font-serif font-medium group-hover:underline group-hover:decoration-dashed group-hover:underline-offset-4 group-hover:decoration-1 text-xl sm:text-6xl"
+                class="mb-2 leading-tight font-serif font-medium group-hover:underline group-hover:decoration-dashed group-hover:underline-offset-4 group-hover:decoration-1 text-l sm:text-2xl"
             >
                 {title}
             </TitleTag>

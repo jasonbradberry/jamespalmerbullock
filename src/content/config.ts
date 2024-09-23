@@ -21,6 +21,7 @@ const stories = defineCollection({
         isFeatured: z.boolean().default(false),
         name: z.string().optional(),
         relationship: z.string().optional(),
+        images: z.array(z.string()).optional(),
         tags: z.array(z.string()).default([]),
         seo: seoSchema.optional()
     })

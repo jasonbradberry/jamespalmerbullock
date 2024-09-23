@@ -24,7 +24,8 @@ const stories = page.data;
     image={{ src: '/meta-image.jpg', alt: 'The preview of the site' }}
     showHeader={true}
 >
-    <h1 class="mb-12 text-2xl leading-tight font-serif sm:mb-16 sm:text-4xl">When I think of James&hellip;</h1>
+    <h1 class="text-xl text-3xl sm:text-4xl font-serif border-b border-main pb-4">When I think of James&hellip;</h1>
+    <p class="mt-4 text-sm leading-normal mb-12 sm:mb-16">Stories, memories and photos of how we experienced and loved James</p>
     {stories.map((post) => <PostPreview post={post} class="mb-10 sm:mb-12" />)}
     <Pagination page={page} class="my-16 sm:my-24" />
 </BaseLayout>

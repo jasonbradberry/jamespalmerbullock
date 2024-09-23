@@ -8,7 +8,7 @@
         --color-text-light: 242 255 242; /* PALE GREEN */
         --color-bg-main: 242 255 242; /* PALE GREEN */
         --color-bg-muted: 60 49 53; /* MUTED BLACK */
-        --color-border-main: 60 49 53; /* MUTED BLACK */
+        --color-border-main: 0 255 0; /* LIME GREEN */
     }
     html.dark {
         --color-text-main: 242 255 242; /* PALE GREEN */
@@ -58,6 +58,31 @@
     url('/fonts/NimbusSansLReg.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+
+.button {
+  background-color: rgb(16 13 17);
+  border: 1px solid rgb(16 13 17);
+}
+
+.button + .button {
+  background-color: transparent;
+  border: 1px solid rgb(16 13 17);
+  color: rgb(16 13 17);
+}
+
+.button:hover,
+.button:focus,
+.button + .button:hover,
+.button + .button:focus {
+  background-color: rgb(0 255 0);
+  color: rgb(16 13 17);
+}
+
+.button + .button {
+  background-color: transparent;
+  border: 1px solid rgb(16 13 17);
+  color: rgb(16 13 17);
 }
 
 .relationship {

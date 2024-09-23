@@ -77,7 +77,7 @@ const siteConfig: SiteConfig = {
     hero: {
         title: 'Call for stories, memories and photos',
         text: `
-  We are making a simple website where our stories and memories of how we experienced and loved James will be shared so that friends and family can remember James together. The stories and photos we gather could also be used publicly at James' funeral and wake and possibly in a photobook for James' family.
+  We are gathering stories and memories of how we experienced and loved James to share here on this website, so that friends and family can remember James together. The stories and photos we gather could also be used publicly at James' funeral and wake and possibly in a photobook for James' family.
   
   If you would like to participate, please submit your story below.
   `,
