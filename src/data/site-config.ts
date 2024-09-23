@@ -51,11 +51,11 @@ const siteConfig: SiteConfig = {
         },
         {
             text: 'Stories',
-            href: '/stories'
+            href: '/jamespalmerbullock/stories'
         },
         {
             text: 'Tags',
-            href: '/tags'
+            href: '/jamespalmerbullock/tags'
         },
         {
             text: 'Submit your story',
@@ -65,7 +65,7 @@ const siteConfig: SiteConfig = {
     footerNavLinks: [
         {
             text: 'About',
-            href: '/about'
+            href: '/jamespalmerbullock/about'
         },
     ],
     socialLinks: [
@@ -92,7 +92,7 @@ const siteConfig: SiteConfig = {
             },
             {
                 text: 'Read stories',
-                href: '/stories'
+                href: '/jamespalmerbullock/stories'
             }
         ]
     },
