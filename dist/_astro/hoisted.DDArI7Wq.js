@@ -1,1 +1,0 @@
-import"./hoisted.Tf468X7Y.js";document.addEventListener("astro:page-load",()=>{const t=document.querySelector(".copy-url-button");t?.addEventListener("click",async()=>{await n(t)});async function n(e){let r=e.getAttribute("data-url")||"",a=e.innerText;await navigator.clipboard.writeText(r),e.innerText="Link copied",setTimeout(()=>{e.innerText=a},2500)}});
