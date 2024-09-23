@@ -2,7 +2,7 @@
 title: 'True kindness'
 publishDate: '09/22/2024'
 name: 'Kika Perez'
-relationship: 'I am one of Juno’s best friends'
+relationship: 'One of Juno’s best friends'
 excerpt: ''
 isFeatured: true
 ---

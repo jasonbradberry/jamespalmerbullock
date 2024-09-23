@@ -60,6 +60,10 @@
   font-style: normal;
 }
 
+.relationship {
+  text-transform: lowercase;
+}
+
 .skip-link {
   position: absolute;
   left: 3em;

@@ -24,23 +24,24 @@ type Props = { post: CollectionEntry<'stories'>; prevPost: CollectionEntry<'stor
 
 const { href } = Astro.url;
 const { post, prevPost, nextPost } = Astro.props;
-const { title, name, publishDate, excerpt, tags = [], seo } = post.data;
+const { title, name, relationship, publishDate, excerpt, tags = [], seo } = post.data;
 const { Content } = await post.render();
 ---
 
 <BaseLayout title={seo?.title ?? title} description={seo?.description ?? excerpt} image={seo?.image} pageType="article" showHeader={true}>
     <article class="mb-16 sm:mb-24">
         <header class="mb-16">
-            <h1 class="text-4xl leading-tight font-serif font-medium sm:text-5xl sm:leading-tight border-b border-main pb-4">{title}</h1>
+            <h1 class="text-3xl leading-tight font-serif font-medium sm:text-5xl sm:leading-tight border-b border-main pb-4">{title}</h1>
             <div class="flex flex-col gap-4 sm:justify-between sm:flex-row mt-4 text-sm">
                 <FormattedDate date={publishDate} />
                 {
-                    name && (
-                        <>
-                            {' '}
-                            <span>Shared by {name}</span>
-                        </>
-                    )
+                    name && relationship ? (
+                        <span>
+                            Shared by {name.trim()}, <span class="relationship">{relationship.trim()}</span>
+                        </span>
+                    ) : name ? (
+                        <span>Shared by {name.trim()}</span>
+                    ) : null
                 }
             </div>
         </header>
@@ -67,9 +68,9 @@ const { Content } = await post.render();
     {
         (prevPost || nextPost) && (
             <div class="my-16 sm:my-24">
-                <h2 class="mb-6 text-sm font-sans tracking-normal">Previous post:</h2>
+                <h2 class="mb-8 text-sm font-sans tracking-normal">Previous story:</h2>
                 {nextPost && <PostPreview post={nextPost} class="mb-10 sm:mb-12" headingLevel="h3" />}
-                <h2 class="mb-6 text-sm font-sans tracking-normal">Next post:</h2>
+                <h2 class="mb-8 text-sm font-sans tracking-normal">Next story:</h2>
                 {prevPost && <PostPreview post={prevPost} class="mb-10 sm:mb-12" headingLevel="h3" />}
             </div>
         )
