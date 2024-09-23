@@ -5,7 +5,8 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://example.com',
+    site: 'https://jasonbradberry.github.io/jamespalmerbullock/', // Site URL
+    base: '/jamespalmerbullock/', // Base URL for GitHub Pages deployment
     integrations: [
         mdx(),
         sitemap(),
@@ -14,3 +15,4 @@ export default defineConfig({
         })
     ]
 });
+import { defineConfig } from 'astro/config';
