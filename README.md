@@ -23,4 +23,4 @@ All commands are run from the root of the project, from a terminal:
 
 ## Deployment
 
-The repo is set up to deploy automatically when the gh-pages branch is pushed to.
+The repo is set up to deploy automatically when the `main` branch is pushed to.
