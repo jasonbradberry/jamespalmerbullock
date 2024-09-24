@@ -2,7 +2,7 @@
     "name": "jamespalmerbullock",
     "type": "module",
     "version": "0.0.1",
-    "homepage": "https://jasonbradberry.github.io/jamespalmerbullock",
+    "homepage": "https://www.jamespalmerbullock.co.uk",
     "scripts": {
         "dev": "astro dev",
         "start": "astro dev",
