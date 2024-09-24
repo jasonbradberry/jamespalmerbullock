@@ -30,6 +30,8 @@ const stories = defineCollection({
 const pages = defineCollection({
     schema: z.object({
         title: z.string(),
+        heading: z.string().optional(),
+        lede: z.string().optional(),
         seo: seoSchema.optional()
     })
 });

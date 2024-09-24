@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+// Fetch the specific page data
+const pages = await getCollection('pages');
+const page = pages.find((p) => p.slug === 'order-of-service');
+
+if (!page) throw new Error('Page not found');
+
+const { title, heading, lede, seo } = page.data;
+const { Content } = await page.render();
+---
+
+<BaseLayout title={seo?.title ?? title} description={seo?.description} image={seo?.image} showHeader={true}>
+    <article class="order-of-service mb-24 sm:mb-24 text-center">
+        <figure class="mb-12">
+            <img class="mx-auto" width="300" src="/James-Sunshine.jpg" decoding="async" alt="James smiling in the sunshine, sat with coffee and breakfast" />
+        </figure>
+        <header class="mb-24">
+            <h1 class="font-bold text-xl mb-4">{heading}</h1>
+            <p>{lede}</p>
+        </header>
+        <div class="max-w-none prose prose-dante sm:prose-lg">
+            <Content />
+        </div>
+    </article>
+</BaseLayout>

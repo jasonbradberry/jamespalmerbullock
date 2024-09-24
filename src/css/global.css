@@ -89,6 +89,79 @@
   text-transform: lowercase;
 }
 
+.order-of-service h1 {
+  margin-block-end: 0.5rem;
+}
+
+.order-of-service .prose {
+  padding-inline: 0.5rem;
+}
+
+.order-of-service .prose strong a {
+  font-weight: 700;
+}
+
+.order-of-service .prose img {
+  mix-blend-mode: multiply;
+}
+
+.order-of-service .prose ul {
+  visibility: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-block-end: 5rem;
+}
+
+.order-of-service .prose p {
+  margin-block: 1.25rem;
+}
+
+.order-of-service .prose :is(h2, h3) {
+  color: #d11590;
+  font-family: "Space Mono", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.order-of-service .prose :is(h2) {
+  font-size: 18px;
+}
+
+.order-of-service .prose :is(h3) {
+  font-size: 16px;
+}
+
+.order-of-service .prose h3 + p {
+  margin-top: 0;
+}
+
+.order-of-service .prose em {
+  font-style: normal;
+  font-size: 15px;
+  color: hsl(338.18,10.09%,21.37%);
+  max-width: 20ch;
+  text-wrap: balance;
+}
+
+.order-of-service p {
+  font-size: 17px;
+}
+
+@media screen and (min-width: 640px) {
+  .order-of-service p {
+    font-size: 18px;
+  }
+
+  .order-of-service .prose h2 {
+    font-size: 20px;
+  } 
+
+  .order-of-service .prose h3 {
+    font-size: 18px;
+  } 
+}
+
 .skip-link {
   position: absolute;
   left: 3em;
