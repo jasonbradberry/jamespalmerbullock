@@ -32,16 +32,20 @@ const { Content } = await post.render();
     <article class="mb-16 sm:mb-24">
         <header class="mb-16">
             <h1 class="text-3xl leading-tight font-serif font-medium sm:text-5xl sm:leading-tight border-b border-main pb-4">{title}</h1>
-            <div class="flex flex-col gap-8 sm:flex-row mt-4 text-sm">
+            <div class="flex flex-col gap-2 sm:gap-8 sm:flex-row mt-4 text-sm">
                 <FormattedDate date={publishDate} />
+                {name && <span>Shared by {name.trim()}</span>}
+            </div>
+            <div class="flex flex-col gap-2 sm:gap-8 sm:flex-row mt-2 text-sm">
                 {
-                    name && relationship ? (
+                    relationship && (
                         <span>
-                            Shared by {name.trim()}, <span class="relationship">{relationship.trim()}</span>
+                            <em>How do you know James?</em>
                         </span>
-                    ) : name ? (
-                        <span>Shared by {name.trim()}</span>
-                    ) : null
+                        <span>
+                            {relationship.trim()}
+                        </span>
+                    )
                 }
             </div>
         </header>
