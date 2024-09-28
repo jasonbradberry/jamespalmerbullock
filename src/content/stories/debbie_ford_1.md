@@ -5,7 +5,9 @@ name: 'Debbie Ford'
 relationship: 'We met through the Chamber of Culture and he also supported my networking group, Last Friday Club.'
 excerpt: ''
 tags: ['chamberofculture', 'creativity', 'welcoming']
-images: []
+images:
+  - debbie-ford-1.jpg
+  - debbie-ford-2.jpg
 isFeatured: true
 ---
 

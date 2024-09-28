@@ -5,7 +5,8 @@ name: 'Mark Oliver'
 relationship: 'Friend'
 excerpt: ''
 tags: ['friendship', 'ibiza']
-images: []
+images:
+  - mark-oliver-1.jpg
 isFeatured: false
 ---
 

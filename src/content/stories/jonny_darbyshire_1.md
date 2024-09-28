@@ -5,7 +5,8 @@ name: 'Jonny Darbyshire'
 relationship: 'Friend doesn’t quite cut it'
 excerpt: ''
 tags: ['love', 'father', 'family', 'faith', 'football']
-images: []
+images:
+  - jonny-darbyshire-1.jpg
 isFeatured: false
 ---
 

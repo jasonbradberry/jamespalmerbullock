@@ -6,11 +6,12 @@ relationship: 'Friend, family, former lodger'
 excerpt: ''
 tags: ['sharingfood', 'friendship']
 images: 
-  - 'Elspeth-Barron-1.avif'
-  - 'Elspeth-Barron-2.avif'
-  - 'Elspeth-Barron-3.avif'
-  - 'Elspeth-Barron-4.avif'
-  - 'Elspeth-Barron-5.avif'
+  - 'Elspeth-Barron-6.avif'
+  - 'Elspeth-Barron-2.jpg'
+  - 'Elspeth-Barron-3.jpg'
+  - 'Elspeth-Barron-4.jpg'
+  - 'Elspeth-Barron-5.jpg'
+  - 'Elspeth-Barron-1.jpg'
 isFeatured: true
 ---
 

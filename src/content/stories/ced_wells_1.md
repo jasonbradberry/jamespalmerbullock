@@ -5,7 +5,8 @@ name: 'Ced Wells'
 relationship: 'Friend'
 excerpt: ''
 tags: ['camping', 'campervan', 'friendship']
-images: []
+images:
+  - ced-wells-1.jpg
 isFeatured: true
 ---
 

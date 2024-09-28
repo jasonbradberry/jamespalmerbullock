@@ -5,7 +5,8 @@ name: 'Sarah Fuller'
 relationship: 'Friends and went to university with Kate'
 excerpt: ''
 tags: ['kind', 'football', 'music']
-images: []
+images:
+  - sarah-fuller-1.jpg
 isFeatured: true
 ---
 

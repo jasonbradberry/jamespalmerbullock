@@ -5,6 +5,7 @@ name: 'Lou Moore'
 relationship: 'Friend'
 excerpt: ''
 tags: []
-images: []
+images:
+  - lou-moore-1.jpg
 isFeatured: true
 ---

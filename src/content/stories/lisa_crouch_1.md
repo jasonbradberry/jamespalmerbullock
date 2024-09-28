@@ -5,7 +5,8 @@ name: 'Lisa Crouch'
 relationship: 'Friend, Chichester, church, Kate'
 excerpt: ''
 tags: ['sharingfood']
-images: []
+images:
+  - lisa-crouch-1.jpg
 isFeatured: false
 ---
 

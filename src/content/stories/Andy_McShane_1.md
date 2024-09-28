@@ -5,7 +5,12 @@ name: 'Andy McShane'
 relationship: 'I got to know James as he finished school and college, summer holidays working at Farringtons, soccer schools and holidaying in Italy'
 excerpt: ''
 tags: ['school', 'football', 'faith']
-images: []
+images:
+  - Andy-McShane-1.jpg
+  - Andy-McShane-2.jpg
+  - Andy-McShane-3.jpg
+  - Andy-McShane-4.jpg
+  - Andy-McShane-5.jpg
 isFeatured: true
 ---
 

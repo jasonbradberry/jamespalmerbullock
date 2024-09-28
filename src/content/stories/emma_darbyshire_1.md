@@ -5,7 +5,8 @@ name: 'Emma Darbyshire'
 relationship: 'Friend and godfather to our son'
 excerpt: ''
 tags: ['welcoming', 'creativity', 'inclusivity']
-images: []
+images:
+  - emma-darbyshire-1.jpg
 isFeatured: true
 ---
 

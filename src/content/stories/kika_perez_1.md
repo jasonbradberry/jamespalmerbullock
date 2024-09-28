@@ -5,8 +5,8 @@ name: 'Kika Perez'
 relationship: 'One of Juno’s best friends'
 excerpt: ''
 images:
-  - 'Kika-Perez-1.avif'
-  - 'Kika-Perez-2.avif'
+  - 'Kika-Perez-1.jpg'
+  - 'Kika-Perez-2.jpg'
 isFeatured: true
 ---
 

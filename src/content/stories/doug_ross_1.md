@@ -4,7 +4,7 @@ publishDate: '09/28/2024'
 name: 'Doug Ross'
 relationship: 'Friend'
 excerpt: ''
-tags: ['poetry', 'dancing', 'community']
+tags: ['poetry', 'dancing', 'community', 'video']
 videos:
   - Doug-Ross-1.mp4
 isFeatured: true

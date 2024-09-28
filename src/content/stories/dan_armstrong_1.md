@@ -5,7 +5,8 @@ name: 'Dan Armstrong'
 relationship: 'Best friend'
 excerpt: ''
 tags: ['coffee', 'friendship']
-images: []
+images:
+  - dan-armstrong-1.jpg
 isFeatured: false
 ---
 

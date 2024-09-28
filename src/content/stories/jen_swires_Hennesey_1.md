@@ -5,6 +5,7 @@ name: 'Jen Swires-Hennesey'
 relationship: 'Friend'
 excerpt: ''
 tags: []
-images: []
+images:
+  - jen-swires-hennessy-1.jpg
 isFeatured: true
 ---

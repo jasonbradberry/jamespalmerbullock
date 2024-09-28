@@ -5,7 +5,8 @@ name: 'Emily Ansell'
 relationship: ''
 excerpt: ''
 tags: ['father', 'generosity', 'hug']
-images: []
+images:
+  - emily-ansell-1.jpg
 isFeatured: true
 ---
 

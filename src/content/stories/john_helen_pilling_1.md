@@ -5,7 +5,8 @@ name: 'John and Helen Pilling'
 relationship: 'Friends of Susan and Richard from school days. We have known James since he was born and spent lots of family time together when our children were little.'
 excerpt: ''
 tags: ['preston', 'childhood']
-images: []
+images:
+  - john-helen-pilling-1.jpg
 isFeatured: false
 ---
 

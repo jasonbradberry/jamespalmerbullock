@@ -5,7 +5,8 @@ name: 'Rachel Evans'
 relationship: 'Friend'
 excerpt: ''
 tags: ['listen', 'friendship', 'calm', 'lifted']
-images: []
+images:
+  - rachel-evans-1.jpg
 isFeatured: true
 ---
 

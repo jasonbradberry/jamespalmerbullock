@@ -5,7 +5,12 @@ name: 'Becky Satherley'
 relationship: 'Friend'
 excerpt: ''
 tags: ['love', 'friendship', 'kind']
-images: []
+images:
+  - Becky-Satherley-1.jpg
+  - Becky-Satherley-2.jpg
+  - Becky-Satherley-3.jpg
+  - Becky-Satherley-4.jpg
+  - Becky-Satherley-5.jpg
 isFeatured: true
 ---
 

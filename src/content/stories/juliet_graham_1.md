@@ -5,7 +5,8 @@ name: 'Juliet Graham'
 relationship: 'Friend – introduced through Revs'
 excerpt: ''
 tags: ['creativity', 'imagination', 'chamberofculture', 'sharingfood']
-images: []
+images:
+  - juliet-graham-1.jpg
 isFeatured: false
 ---
 

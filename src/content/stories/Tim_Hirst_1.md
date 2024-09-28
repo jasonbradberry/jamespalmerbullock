@@ -5,7 +5,8 @@ name: 'Tim Hirst'
 relationship: 'Ibiza'
 excerpt: ''
 tags: ['ibiza', '24-7', 'encourager', 'floated']
-images: []
+images:
+  - tim-hirst-1.jpg
 isFeatured: true
 ---
 

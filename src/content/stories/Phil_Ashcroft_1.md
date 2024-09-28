@@ -5,7 +5,8 @@ name: 'Phil Ascroft'
 relationship: 'Friend'
 excerpt: ''
 tags: ['school', 'football', 'faith']
-images: []
+images:
+  - phil-ashcroft-1.jpg
 isFeatured: true
 ---
 

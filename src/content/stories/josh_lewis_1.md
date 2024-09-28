@@ -5,6 +5,7 @@ name: 'Josh Lewis'
 relationship: 'Nephew of James'
 excerpt: ''
 tags: []
-images: []
+images:
+  - josh-lewis-1.jpg
 isFeatured: false
 ---

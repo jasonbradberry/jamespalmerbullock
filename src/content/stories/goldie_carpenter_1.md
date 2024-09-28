@@ -5,7 +5,8 @@ name: 'Goldie Carpenter'
 relationship: 'Friend'
 excerpt: ''
 tags: ['festival', 'dancing']
-images: []
+images:
+  - goldie-carpenter-1.jpg
 isFeatured: true
 ---
 

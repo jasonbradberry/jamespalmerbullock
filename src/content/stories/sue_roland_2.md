@@ -6,6 +6,6 @@ relationship: 'Sister in law'
 excerpt: ''
 tags: ['camping']
 images:
-  - 'Sue-Roland-2.jpg'
+  - 'Sue-Roland-1.jpg'
 isFeatured: true
 ---

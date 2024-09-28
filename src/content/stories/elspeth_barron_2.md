@@ -5,7 +5,8 @@ name: 'Elspeth Barron'
 relationship: 'Friend, family, former lodger'
 excerpt: ''
 tags: ['sharingfood', 'family', 'music', 'listen', 'beauty']
-images: []
+images:
+  - Elspeth-Barron-7.jpeg
 isFeatured: true
 ---
 

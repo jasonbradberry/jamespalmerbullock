@@ -5,7 +5,8 @@ name: 'Abby Moule'
 relationship: 'Friend and fellow beach lover'
 excerpt: ''
 tags: ['beach', 'summer']
-images: []
+images:
+  - abby-moule-1.jpg
 isFeatured: true
 ---
 

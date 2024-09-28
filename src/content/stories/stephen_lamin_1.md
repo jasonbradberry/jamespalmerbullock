@@ -5,7 +5,7 @@ name: 'Stephen Lamin'
 relationship: 'Headteacher and friend'
 excerpt: ''
 images:
-  - 'Stephen-Lamin-1.avif'
+  - Stephen-Lamin-1.jpg
 isFeatured: true
 ---
 

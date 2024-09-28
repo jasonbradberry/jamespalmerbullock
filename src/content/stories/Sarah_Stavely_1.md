@@ -5,7 +5,8 @@ name: 'Sarah Staveley'
 relationship: 'Cousin-in-law'
 excerpt: ''
 tags: ['music', 'family', 'generosity', 'sharingfood']
-images: []
+images:
+  - sarah-staveley-1.jpg
 isFeatured: true
 ---
 

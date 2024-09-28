@@ -5,7 +5,8 @@ name: 'Wesley McCoy'
 relationship: 'Bro in law'
 excerpt: ''
 tags: ['family']
-images: []
+images:
+  - wesley-mccoy-1.jpg
 isFeatured: true
 ---
 

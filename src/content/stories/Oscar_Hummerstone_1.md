@@ -5,7 +5,8 @@ name: 'Oscar Hummerstone'
 relationship: 'Extended family'
 excerpt: ''
 tags: ['family', 'generosity']
-images: []
+images:
+  - oscar-hummerstone-1.jpg
 isFeatured: true
 ---
 

@@ -5,7 +5,12 @@ name: 'Emma Darbyshire'
 relationship: 'Friend'
 excerpt: ''
 tags: ['sharingfood']
-images: []
+images:
+  - emma-darbyshire-1.jpg
+  - emma-darbyshire-2.jpg
+  - emma-darbyshire-3.jpg
+  - emma-darbyshire-4.jpg
+  - emma-darbyshire-5.jpg
 isFeatured: true
 ---
 

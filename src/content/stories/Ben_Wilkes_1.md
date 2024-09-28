@@ -5,7 +5,8 @@ name: 'Ben Wilkes'
 relationship: 'We have been friends since we both arrived in Chichester'
 excerpt: ''
 tags: ['running', 'floated']
-images: []
+images:
+  - ben-wilkes-1.jpg
 isFeatured: true
 ---
 

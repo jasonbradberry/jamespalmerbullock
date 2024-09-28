@@ -5,7 +5,8 @@ name: 'Eloise Armstrong'
 relationship: 'Friend and at times housemate'
 excerpt: ''
 tags: ['love', 'welcoming']
-images: []
+images:
+  - Elouise-Armstrong-1.jpg
 isFeatured: true
 ---
 
