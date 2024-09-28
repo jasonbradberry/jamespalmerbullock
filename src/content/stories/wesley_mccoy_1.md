@@ -1,5 +1,5 @@
 ---
-title: 'Family photo in Edinburgh, Malawi adverntures'
+title: 'Family photo in Edinburgh, Malawi adventures'
 publishDate: '09/23/2024'
 name: 'Wesley McCoy'
 relationship: 'Bro in law'
