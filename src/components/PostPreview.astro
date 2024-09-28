@@ -6,11 +6,11 @@ import FormattedDate from './FormattedDate.astro';
 type Props = { post: CollectionEntry<'stories'>; class?: string; headingLevel?: 'h2' | 'h3' };
 
 const { post, class: className, headingLevel = 'h2' } = Astro.props;
-const { title, publishDate, images, name, excerpt } = post.data;
+const { title, publishDate, images, videos, name, excerpt } = post.data;
 const TitleTag = headingLevel;
 ---
 
-<a href={`/stories/${post.slug}/`} class="group">
+<a href={`/stories/${post.slug}/`} class="group pb-12">
     {
         images && images.length > 0 && (
             <div class="mt-16">
@@ -18,7 +18,14 @@ const TitleTag = headingLevel;
             </div>
         )
     }
-    <div class:list={['flex justify-between items-start gap-8', className]}>
+    {
+        videos && videos.length > 0 && (
+            <div class="mt-16">
+                <video class="mb-8 sm:mb-12 group-hover:opacity-100" src={`/${videos[0]}`} controls muted loop autoplay />
+            </div>
+        )
+    }
+    <div class:list={['flex justify-between items-start gap-8 border-b border-main border-dashed pb-12 sm:pb-16 post-preview-border', className]}>
         <div class="grow">
             <TitleTag
                 class="mb-2 leading-tight font-serif font-medium group-hover:underline group-hover:decoration-dashed group-hover:underline-offset-4 group-hover:decoration-1 text-xl sm:text-2xl"

@@ -6,7 +6,7 @@ relationship: 'Friend'
 excerpt: ''
 tags: ['love', 'friendship', 'kind']
 images: []
-isFeatured: false
+isFeatured: true
 ---
 
 The PBs are a truly beautiful family who have shown us love, kindness and friendship. We love you all very much xx

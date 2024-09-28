@@ -4,6 +4,7 @@ publishDate: '09/21/2024'
 name: 'Elspeth Barron'
 relationship: 'Friend, family, former lodger'
 excerpt: ''
+tags: ['sharingfood', 'friendship']
 images: 
   - 'Elspeth-Barron-1.avif'
   - 'Elspeth-Barron-2.avif'

@@ -1,15 +1,16 @@
 ---
-title: 'Black Forest camping 2023'
-publishDate: '09/21/2024'
+title: 'James letting loose: Dimitri from Paris @ Goodwood June 2024'
+publishDate: '09/28/2024'
 name: 'Doug Ross'
 relationship: 'Friend'
 excerpt: ''
 tags: ['poetry', 'dancing', 'community']
-images: []
+videos:
+  - Doug-Ross-1.mp4
 isFeatured: true
 ---
 
-James
+**James**
 
 There are some lights  
 that don’t fade,  

@@ -24,7 +24,7 @@ type Props = { post: CollectionEntry<'stories'>; prevPost: CollectionEntry<'stor
 
 const { href } = Astro.url;
 const { post, prevPost, nextPost } = Astro.props;
-const { title, name, relationship, publishDate, excerpt, images, tags = [], seo } = post.data;
+const { title, name, relationship, publishDate, excerpt, images, videos, tags = [], seo } = post.data;
 const { Content } = await post.render();
 ---
 
@@ -57,6 +57,15 @@ const { Content } = await post.render();
                 <div class="mt-16">
                     {images.map((img) => (
                         <img src={`/${img}`} alt="" class="mb-8 sm:mb-12" />
+                    ))}
+                </div>
+            )
+        }
+        {
+            videos && videos.length > 0 && (
+                <div class="mt-16">
+                    {videos.map((video) => (
+                        <video class="mb-8 sm:mb-12" src={`/${video}`} controls muted loop autoplay />
                     ))}
                 </div>
             )

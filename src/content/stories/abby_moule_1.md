@@ -1,16 +1,12 @@
 ---
-title: 'Eternally positive and his infectious joy was a delight to be around'
+title: 'Golden day on the beach with friends'
 publishDate: '09/21/2024'
 name: 'Abby Moule'
-relationship: 'Friends since Wilbur was born'
+relationship: 'Friend and fellow beach lover'
 excerpt: ''
-tags: ['positivity', 'creativity', 'father']
+tags: ['beach', 'summer']
 images: []
-isFeatured: false
+isFeatured: true
 ---
 
-James was such a positive person and we always had such a great laugh when our families got together. 
-
-James and I talked about a theoretical pop-up events company that would host a mass dinner for people without revealing the location, and would pop up in public spaces such as high streets, windmills, and parks for a dinner. He was such a positive soul with a can-do attitude and I just can’t believe he won’t be spreading his own personal type of joy around anymore. 
-
-This photo was of my daughter’s 4th birthday party on West Witt on a sunny September day, and all the children played beautifully while the grown-ups enjoyed some time together.
+A day spent with James and friends on the golden sands, the sea stretching out endlessly before us. Laughter, sandcastles, and the feeling of sunshine on our skin.
