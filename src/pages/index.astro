@@ -7,18 +7,32 @@ import PostPreview from '../components/PostPreview.astro';
 import siteConfig from '../data/site-config';
 import { sortItemsByDateDesc } from '../utils/data-utils';
 
+// Fetch posts and filter featured
 const posts = (await getCollection('stories')).sort(sortItemsByDateDesc);
 const featuredPosts = posts.filter(({ data }) => data.isFeatured);
+
+// Function to shuffle array
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+    }
+    return array;
+}
+
+// Shuffle featured posts and select 6
+const shuffledPosts = shuffleArray(featuredPosts);
+const randomFeaturedPosts = shuffledPosts.slice(0, 6);
 ---
 
 <BaseLayout description={siteConfig.description} image={siteConfig.image}>
     <Hero />
     {
-        featuredPosts?.length > 0 && (
+        randomFeaturedPosts?.length > 0 && (
             <div class="mb-16 sm:mb-24">
-                <h2 class="mb-12 text-xl sm:text-2xl font-serif sm:mb-16 border-b border-main pb-4">Stories & memories</h2>
-                {featuredPosts.map((post) => (
-                    <PostPreview post={post} class="mb-10 sm:mb-12" headingLevel="h3" />
+                <h2 class="mb-12 text-3xl sm:text-4xl font-serif sm:mb-16 border-b border-main pb-4">Stories & memories</h2>
+                {randomFeaturedPosts.map((post) => (
+                    <PostPreview key={post.slug} post={post} class="mb-10 sm:mb-12" headingLevel="h3" />
                 ))}
                 <div class="mt-12 sm:mt-16">
                     <Button href="/stories">View all</Button>

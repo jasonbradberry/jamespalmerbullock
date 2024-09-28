@@ -53,10 +53,10 @@ const siteConfig: SiteConfig = {
             text: 'Stories',
             href: '/stories'
         },
-        // {
-        //     text: 'Tags',
-        //     href: '/tags'
-        // },
+        {
+            text: 'Tags',
+            href: '/tags'
+        },
         {
             text: 'Submit your story',
             href: 'https://jpb.squarespace.com/submit'

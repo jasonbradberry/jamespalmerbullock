@@ -2,6 +2,7 @@
 import type { GetStaticPathsOptions, Page } from 'astro';
 import { type CollectionEntry, getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Button from '../../components/Button.astro';
 import Pagination from '../../components/Pagination.astro';
 import PostPreview from '../../components/PostPreview.astro';
 import siteConfig from '../../data/site-config';
@@ -15,6 +16,7 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
 type Props = { page: Page<CollectionEntry<'stories'>> };
 
 const { page } = Astro.props;
+const hero = siteConfig.hero;
 const stories = page.data;
 ---
 
@@ -25,7 +27,14 @@ const stories = page.data;
     showHeader={true}
 >
     <h1 class="text-xl text-3xl sm:text-4xl font-serif border-b border-main pb-4">When I think of James&hellip;</h1>
-    <p class="mt-4 text-sm leading-normal mb-12 sm:mb-16">Stories, memories and photos of how we experienced and loved James</p>
-    {stories.map((post) => <PostPreview post={post} class="mb-10 sm:mb-12" />)}
+    <p class="mt-4 mb-8 text-sm leading-normal">Stories, memories and photos of how we experienced and loved James.</p>
+    {
+        hero.actions[0] && (
+            <Button class="ghost-button mb-12 sm:mb-16" href={hero.actions[0].href}>
+                {hero.actions[0].text}
+            </Button>
+        )
+    }
+    {stories.map((post) => <PostPreview post={post} class="mb-12 sm:mb-16" />)}
     <Pagination page={page} class="my-16 sm:my-24" />
 </BaseLayout>
