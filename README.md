@@ -10,7 +10,7 @@ Static assets, like images or video, are stored in the `public/` directory.
 
 ## Astro.js Commands
 
-All commands are run from the root of the project, from a terminal:
+All commands are run from the root of the project, from terminal:
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
